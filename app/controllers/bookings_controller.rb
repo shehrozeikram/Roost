@@ -9,8 +9,10 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     if @booking.save
-      redirect_to '/'
+      flash[:success] = 'Thank You! Your Booking Has Been Created'
+      redirect_to @booking
     else
+      flash[:danger] = @booking.errors.full_messages[0]
       render :new, status: :unprocessable_entity
     end
   end
