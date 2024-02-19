@@ -3,9 +3,7 @@ class HomeController < ApplicationController
   end
 
   def booking
-  end
 
-  def contact
   end
 
   def destination
@@ -20,10 +18,11 @@ class HomeController < ApplicationController
   def testimonial
   end
 
-  def about
-  end
-
   def package
   end
+
+  protected
+
+
 
 end
