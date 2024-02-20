@@ -24,8 +24,6 @@ class HomeController < ApplicationController
 
   end
 
-  protected
-
 
 
 end

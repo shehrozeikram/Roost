@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-
-
+  get 'weddings/new'
   root "home#index"
 
   get 'home/index', to: 'home#index'
@@ -17,6 +16,8 @@ Rails.application.routes.draw do
   resources :bookings
 
   resources :contacts
+
+  resources :weddings
 
 
 
