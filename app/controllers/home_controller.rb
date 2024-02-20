@@ -2,10 +2,6 @@ class HomeController < ApplicationController
   def index
   end
 
-  def booking
-
-  end
-
   def destination
   end
 
@@ -19,6 +15,13 @@ class HomeController < ApplicationController
   end
 
   def package
+  end
+
+  def guide
+  end
+
+  def wedding_hall
+
   end
 
   protected
